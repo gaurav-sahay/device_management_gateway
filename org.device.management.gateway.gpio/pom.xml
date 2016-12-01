@@ -8,13 +8,13 @@
 		<artifactId>device_management_gateway</artifactId>
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
-	<artifactId>org.bosch.device.management.gateway.api</artifactId>
-	<name>org.bosch.device.management.gateway.api</name>
+	<artifactId>org.device.management.gateway.gpio</artifactId>
+	<name>org.device.management.gateway.gpio</name>
 	<url>http://maven.apache.org</url>
 	<packaging>bundle</packaging>
 	<properties>
 		<bundle.name>${project.name}</bundle.name>
-		<bundle.symbolicName>org.bosch.device.management.gateway.api</bundle.symbolicName>
+		<bundle.symbolicName>org.device.management.gateway.gpio</bundle.symbolicName>
 	</properties>
 	<build>
 		<plugins>
@@ -38,8 +38,9 @@
 					<instructions>
 						<Bundle-Name>${bundle.name}</Bundle-Name>
 						<Bundle-SymbolicName>${bundle.symbolicName}</Bundle-SymbolicName>
-						<!-- <Private-Package>org.smart.parking.raspi.driver</Private-Package> 
-							<Bundle-ClassPath></Bundle-ClassPath> <Bundle-Activator>org.smart.parking.raspi.driver.SmartParkingDriverRaspi</Bundle-Activator> -->
+						<!-- <Private-Package>org.smart.parking.raspi.driver</Private-Package>
+						<Bundle-ClassPath></Bundle-ClassPath>
+						<Bundle-Activator>org.smart.parking.raspi.driver.SmartParkingDriverRaspi</Bundle-Activator> -->
 						<Import-Package>*</Import-Package>
 						<!-- <Export-Package>org.smart.parking.raspi.driver.webService,org.smart.parking.raspi.driver.to</Export-Package> -->
 					</instructions>
@@ -48,5 +49,15 @@
 		</plugins>
 	</build>
 	<dependencies>
+		<dependency>
+			<groupId>com.pi4j</groupId>
+			<artifactId>pi4j-service</artifactId>
+			<version>1.1</version>
+		</dependency>
+		<dependency>
+			<groupId>org.bosch.device.management.gateway</groupId>
+			<artifactId>org.bosch.device.management.gateway.api</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
 	</dependencies>
 </project>
