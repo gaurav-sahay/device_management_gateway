@@ -38,8 +38,8 @@
 					<instructions>
 						<Bundle-Name>${bundle.name}</Bundle-Name>
 						<Bundle-SymbolicName>${bundle.symbolicName}</Bundle-SymbolicName>
-						<!-- <Private-Package>org.smart.parking.raspi.driver</Private-Package> 
-							<Bundle-ClassPath></Bundle-ClassPath> <Bundle-Activator>org.smart.parking.raspi.driver.SmartParkingDriverRaspi</Bundle-Activator> -->
+						<Export-Package></Export-Package>
+							<!-- <Bundle-ClassPath></Bundle-ClassPath> <Bundle-Activator>org.smart.parking.raspi.driver.SmartParkingDriverRaspi</Bundle-Activator> -->
 						<Import-Package>*</Import-Package>
 						<!-- <Export-Package>org.smart.parking.raspi.driver.webService,org.smart.parking.raspi.driver.to</Export-Package> -->
 					</instructions>

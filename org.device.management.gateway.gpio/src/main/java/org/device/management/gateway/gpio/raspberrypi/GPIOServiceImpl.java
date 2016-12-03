@@ -14,7 +14,8 @@ import com.pi4j.io.gpio.impl.GpioControllerImpl;
 
 /**
  * @author GAH6KOR
- *
+ * 
+ * GPIO service implementation for the raspberrypi.
  */
 @Component(immediate=true)
 @Service(value=GPIOService.class)
