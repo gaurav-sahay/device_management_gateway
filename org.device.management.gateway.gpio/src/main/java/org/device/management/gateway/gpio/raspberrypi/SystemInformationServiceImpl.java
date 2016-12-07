@@ -9,6 +9,7 @@ import org.apache.felix.scr.annotations.Activate;
 import org.apache.felix.scr.annotations.Component;
 import org.apache.felix.scr.annotations.Deactivate;
 import org.apache.felix.scr.annotations.Service;
+import org.apache.log4j.Logger;
 import org.bosch.device.management.gateway.system.api.SystemInformationService;
 import org.osgi.service.component.ComponentContext;
 
@@ -24,18 +25,19 @@ import com.pi4j.system.SystemInfo;
 @Service(value = SystemInformationService.class)
 public class SystemInformationServiceImpl implements SystemInformationService {
 
+	private static final Logger LOG = Logger.getLogger(SystemInformationServiceImpl.class);
 	public SystemInformationServiceImpl() {
 
 	}
 
 	@Activate
 	public void activate(ComponentContext componentContext) {
-		System.out.println("The System information service is active !");
+		LOG.info("The System information service is active !");
 	}
 
 	@Deactivate
 	public void deactivate(ComponentContext componentContext) {
-		System.out.println("Closing System information service !");
+		LOG.info("Closing System information service !");
 	}
 
 	public String getProcessor() throws IOException, InterruptedException {

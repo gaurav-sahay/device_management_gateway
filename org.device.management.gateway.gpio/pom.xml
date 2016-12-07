@@ -39,9 +39,9 @@
 						<Bundle-Name>${bundle.name}</Bundle-Name>
 						<Bundle-SymbolicName>${bundle.symbolicName}</Bundle-SymbolicName>
 						<Export-Package></Export-Package>
-							<!-- <Bundle-ClassPath></Bundle-ClassPath> <Bundle-Activator>org.smart.parking.raspi.driver.SmartParkingDriverRaspi</Bundle-Activator> -->
+						<!-- <Bundle-ClassPath></Bundle-ClassPath> <Bundle-Activator></Bundle-Activator> -->
 						<Import-Package>*</Import-Package>
-						<!-- <Export-Package>org.smart.parking.raspi.driver.webService,org.smart.parking.raspi.driver.to</Export-Package> -->
+						<!-- <Export-Package></Export-Package> -->
 					</instructions>
 				</configuration>
 			</plugin>
@@ -65,6 +65,11 @@
 			<groupId>com.pi4j</groupId>
 			<artifactId>pi4j-core</artifactId>
 			<version>1.1</version>
+		</dependency>
+		<dependency>
+			<groupId>org.ops4j.pax.logging</groupId>
+			<artifactId>pax-logging-service</artifactId>
+			<version>1.9.1</version>
 		</dependency>
 		<dependency>
 			<groupId>org.bosch.device.management.gateway</groupId>

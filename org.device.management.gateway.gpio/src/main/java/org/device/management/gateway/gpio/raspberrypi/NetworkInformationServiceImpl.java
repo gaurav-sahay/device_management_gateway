@@ -9,6 +9,7 @@ import org.apache.felix.scr.annotations.Activate;
 import org.apache.felix.scr.annotations.Component;
 import org.apache.felix.scr.annotations.Deactivate;
 import org.apache.felix.scr.annotations.Service;
+import org.apache.log4j.Logger;
 import org.bosch.device.management.gateway.system.api.NetworkInformationService;
 import org.osgi.service.component.ComponentContext;
 
@@ -24,17 +25,20 @@ import com.pi4j.system.NetworkInfo;
 @Service(value = NetworkInformationService.class)
 public class NetworkInformationServiceImpl implements NetworkInformationService {
 
+	private static final Logger LOG = Logger.getLogger(NetworkInformationServiceImpl.class);
+	
+	
 	public NetworkInformationServiceImpl() {
 	}
 
 	@Activate
 	public void activate(ComponentContext componentContext) {
-		System.out.println("The Network information service is active !");
+		LOG.info("The Network information service is active !");
 	}
 
 	@Deactivate
 	public void deactivate(ComponentContext componentContext) {
-		System.out.println("Closing Network information service !");
+		LOG.info("Closing Network information service !");
 	}
 
 	public String getHostname() throws IOException, InterruptedException {
@@ -60,5 +64,5 @@ public class NetworkInformationServiceImpl implements NetworkInformationService 
 	public String[] getNameservers() throws IOException, InterruptedException {
 		return NetworkInfo.getNameservers();
 	}
-
+	
 }
