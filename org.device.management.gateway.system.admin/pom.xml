@@ -1,20 +1,19 @@
 <?xml version="1.0"?>
-<project
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"
-	xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-	<modelVersion>4.0.0</modelVersion>
-	<parent>
-		<groupId>org.bosch.device.management.gateway</groupId>
-		<artifactId>device_management_gateway</artifactId>
-		<version>0.0.1-SNAPSHOT</version>
-	</parent>
-	<artifactId>org.device.management.gateway.gpio</artifactId>
-	<name>org.device.management.gateway.gpio</name>
-	<url>http://maven.apache.org</url>
-	<packaging>bundle</packaging>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>org.bosch.device.management.gateway</groupId>
+    <artifactId>device_management_gateway</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+  </parent>
+  <artifactId>org.device.management.gateway.system.admin</artifactId>
+  <name>org.device.management.gateway.system.admin</name>
+  <url>http://maven.apache.org</url>
+  <packaging>bundle</packaging>
 	<properties>
 		<bundle.name>${project.name}</bundle.name>
-		<bundle.symbolicName>org.device.management.gateway.gpio</bundle.symbolicName>
+		<bundle.symbolicName>org.device.management.gateway.system.admin</bundle.symbolicName>
 	</properties>
 	<build>
 		<plugins>
@@ -73,7 +72,7 @@
 		</dependency>
 		<dependency>
 			<groupId>org.bosch.device.management.gateway</groupId>
-			<artifactId>org.bosch.device.management.gateway.api</artifactId>
+			<artifactId>org.device.management.gateway.api</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
 	</dependencies>

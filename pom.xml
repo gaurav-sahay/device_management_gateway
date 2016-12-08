@@ -59,7 +59,7 @@
 		</dependency>
 	</dependencies>
 	<modules>
-		<module>org.bosch.device.management.gateway.api</module>
-		<module>org.device.management.gateway.gpio</module>
+		<module>org.device.management.gateway.api</module>
+		<module>org.device.management.gateway.system.admin</module>
 	</modules>
 </project>
