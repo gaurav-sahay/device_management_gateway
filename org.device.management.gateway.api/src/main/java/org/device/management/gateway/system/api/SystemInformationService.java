@@ -1,7 +1,7 @@
 /**
  * 
  */
-package org.bosch.device.management.gateway.system.api;
+package org.device.management.gateway.system.api;
 
 /**
  * @author GAH6KOR

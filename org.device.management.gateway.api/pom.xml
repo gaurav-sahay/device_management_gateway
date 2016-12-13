@@ -3,7 +3,7 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <modelVersion>4.0.0</modelVersion>
   <parent>
-    <groupId>org.bosch.device.management.gateway</groupId>
+    <groupId>org.device.management.gateway</groupId>
     <artifactId>device_management_gateway</artifactId>
     <version>0.0.1-SNAPSHOT</version>
   </parent>
@@ -40,7 +40,7 @@
 						<!-- <Private-Package>org.smart.parking.raspi.driver</Private-Package> 
 							<Bundle-ClassPath></Bundle-ClassPath> <Bundle-Activator>org.smart.parking.raspi.driver.SmartParkingDriverRaspi</Bundle-Activator> -->
 						<Import-Package>*</Import-Package>
-						<!-- <Export-Package>org.smart.parking.raspi.driver.webService,org.smart.parking.raspi.driver.to</Export-Package> -->
+						<Export-Package>org.device.management.gateway.gpio.api,org.device.management.gateway.system.api</Export-Package>
 					</instructions>
 				</configuration>
 			</plugin>

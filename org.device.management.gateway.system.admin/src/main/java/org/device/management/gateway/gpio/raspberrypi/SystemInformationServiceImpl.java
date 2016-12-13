@@ -10,7 +10,7 @@ import org.apache.felix.scr.annotations.Component;
 import org.apache.felix.scr.annotations.Deactivate;
 import org.apache.felix.scr.annotations.Service;
 import org.apache.log4j.Logger;
-import org.bosch.device.management.gateway.system.api.SystemInformationService;
+import org.device.management.gateway.system.api.SystemInformationService;
 import org.osgi.service.component.ComponentContext;
 
 import com.pi4j.system.SystemInfo;
