@@ -51,11 +51,6 @@
 			<version>1.9.1</version>
 		</dependency>
 		<dependency>
-			<groupId>org.apache.felix</groupId>
-			<artifactId>org.apache.felix.log</artifactId>
-			<version>1.0.1</version>
-		</dependency>
-		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
 			<version>3.8.1</version>
@@ -66,5 +61,7 @@
 		<module>org.device.management.gateway.api</module>
 		<module>org.device.management.gateway.system.admin</module>
     	<module>org.device.management.gateway.device.claim</module>
+    	<module>org.device.management.gateway.device.healthcheck</module>
+    <module>org.device.management.gateway.jersey.config.provider</module>
   </modules>
 </project>

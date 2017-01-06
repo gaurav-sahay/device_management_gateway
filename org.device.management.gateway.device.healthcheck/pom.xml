@@ -8,13 +8,13 @@
 		<artifactId>device_management_gateway</artifactId>
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
-	<artifactId>org.device.management.gateway.device.claim</artifactId>
-	<name>org.device.management.gateway.device.claim</name>
+	<artifactId>org.device.management.gateway.device.healthcheck</artifactId>
+	<name>org.device.management.gateway.device.healthcheck</name>
 	<url>http://maven.apache.org</url>
 	<packaging>bundle</packaging>
 	<properties>
 		<bundle.name>${project.name}</bundle.name>
-		<bundle.symbolicName>org.device.management.gateway.device.claim</bundle.symbolicName>
+		<bundle.symbolicName>org.device.management.gateway.device.healthcheck</bundle.symbolicName>
 	</properties>
 	<build>
 		<plugins>

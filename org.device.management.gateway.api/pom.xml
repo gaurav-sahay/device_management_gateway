@@ -41,7 +41,7 @@
 						<!-- <Private-Package>org.smart.parking.raspi.driver</Private-Package> 
 							<Bundle-ClassPath></Bundle-ClassPath> <Bundle-Activator>org.smart.parking.raspi.driver.SmartParkingDriverRaspi</Bundle-Activator> -->
 						<Import-Package>*</Import-Package>
-						<Export-Package>org.device.management.gateway.gpio.api,org.device.management.gateway.system.api</Export-Package>
+						<!-- <Export-Package>org.device.management.gateway.gpio.api,org.device.management.gateway.system.api</Export-Package> -->
 					</instructions>
 				</configuration>
 			</plugin>

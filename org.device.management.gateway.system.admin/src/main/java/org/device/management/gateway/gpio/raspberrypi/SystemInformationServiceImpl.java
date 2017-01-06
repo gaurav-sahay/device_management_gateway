@@ -40,46 +40,47 @@ public class SystemInformationServiceImpl implements SystemInformationService {
 		LOG.info("Closing System information service !");
 	}
 
+	@Override
 	public String getProcessor() throws IOException, InterruptedException {
 		return SystemInfo.getProcessor();
 	}
-
+	@Override
 	public String getBogoMIPS() throws IOException, InterruptedException {
 		return SystemInfo.getBogoMIPS();
 	}
-
+	@Override
 	public String[] getCpuFeatures() throws IOException, InterruptedException {
 		return SystemInfo.getCpuFeatures();
 	}
-
+	@Override
 	public String getCpuImplementer() throws IOException, InterruptedException {
 		return SystemInfo.getCpuImplementer();
 	}
-
+	@Override
 	public String getCpuArchitecture() throws IOException, InterruptedException {
 		return SystemInfo.getCpuArchitecture();
 	}
-
+	@Override
 	public String getCpuVariant() throws IOException, InterruptedException {
 		return SystemInfo.getCpuVariant();
 	}
-
+	@Override
 	public String getCpuPart() throws IOException, InterruptedException {
 		return SystemInfo.getCpuPart();
 	}
-
+	@Override
 	public String getCpuRevision() throws IOException, InterruptedException {
 		return SystemInfo.getCpuRevision();
 	}
-
+	@Override
 	public String getHardware() throws IOException, InterruptedException {
 		return SystemInfo.getHardware();
 	}
-
+	@Override
 	public String getRevision() throws IOException, InterruptedException {
 		return SystemInfo.getRevision();
 	}
-
+	@Override
 	public String getSerial() throws IOException, InterruptedException {
 		return SystemInfo.getSerial();
 	}
