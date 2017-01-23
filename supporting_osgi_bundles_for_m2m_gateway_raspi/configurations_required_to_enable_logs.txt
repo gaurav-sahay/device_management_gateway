@@ -1,0 +1,10 @@
+install following bundles in the felix container:
+pax-logging-service-1.9.1
+pax-logging-api-1.9.1
+pax-confman-propsloader-0.2.3
+
+create the configurations folder under the installation directory of the felix.
+create services and factories folder under the configurations folder.
+put the org.ops4j.pax.logging.properties file under the services folder with all the necessary content for the logger(put the log4j properties configurations content in the org.ops4j.pax.logging.properties file)
+
+Note: To enable the logging for all the bundles make sure to install the pax logging bundles in the starting itself before even installing any other bundles.

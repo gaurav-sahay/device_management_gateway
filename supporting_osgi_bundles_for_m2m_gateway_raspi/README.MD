@@ -1,0 +1,1 @@
+# The supposrting osgi bundles for M2M gateway (https://github.com/gaurav-sahay/device_management_gateway)  for Raspberrypi.
